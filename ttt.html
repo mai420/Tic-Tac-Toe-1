@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            border: 12px solid palevioletred;
+            max-height: 1000px;
+            max-width: 500px;
+            align-content: center;
+            margin-left: 400px;
+            margin-top: 50px;
+        }
+        
+        .ge{
+            background-color: white;
+            border: 2px solid;
+            padding: 40px;
+            text-align: center;
+            font-size: 3vw;
+            cursor: pointer;
+            color: black;
+        }
+        .ge:hover{
+            background-color: lightpink;
+        }
+        #inf{
+            color: black;
+            font-size: 35px;
+            text-align: center;
+        }
+        #reset{
+            border: 10px solid black;
+            padding: 10px;
+            font-size: 20px;
+            margin-left:600px;
+            margin-top: 30px;
+        }
+    
+    </style>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <h1 style="text-align: center;font-size: 50px;"><u>Tic Tac Toe Game</u></h1>
+    <div id="inf"></div>
+    <div class="grid">
+        <div cellIndex = "0" class="ge"></div>
+        <div cellIndex = "1" class="ge"></div>
+        <div cellIndex = "2" class="ge"></div>
+        <div cellIndex = "3" class="ge"></div>
+        <div cellIndex = "4" class="ge"></div>
+        <div cellIndex = "5" class="ge"></div>
+        <div cellIndex = "6" class="ge"></div>
+        <div cellIndex = "7" class="ge"></div>
+        <div cellIndex = "8" class="ge"></div>
+    </div>
+    <div>
+        <button id="reset">Reset</button>  
+        
+    </div>
+<script src="ttt.js"></script>  
+</body>
+</html>
